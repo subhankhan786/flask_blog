@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+<div class="bg">
+    <h1>Anonymous</h1>
+  </div>
+<div class="homepage-container">
+  <div class="hero">
+    <h1>Find your voice without the noise:</h1>
+    <h1>Share anonymously, read freely.</h1>
+    <p>Discover diverse perspectives and engage in thoughtful discussions.</p>
+    <p>Connect with like-minded individuals on a deeper level.</p>
+  </div>
+  
+  <div class="call-to-action">
+    <a href="/create">Start writing anonymously now!</a>
+  </div>
+
+  <div class="additional-content">
+    <h3>Explore More:</h3>
+    <p>Showcase popular or trending topics and posts.</p>
+    <p>Feature user testimonials about positive experiences on the platform.</p>
+    <p>Explain the platform's commitment to anonymity and safety.</p>
+  </div>
+
+  <div class="user-testimonials">
+    <h3>User Testimonials:</h3>
+    <blockquote>
+      <p>This platform has given me the freedom to express myself without any fear. It's truly liberating!</p>
+      <footer>- Anonymous User</footer>
+    </blockquote>
+    <blockquote>
+      <p>Engaging with others anonymously has opened up my mind to so many new ideas. Highly recommend!</p>
+      <footer>- Another Anonymous User</footer>
+    </blockquote>
+  </div>
+
+  <div class="helpful-links">
+    <a href="#">Learn more about anonymous communication</a>
+    <a href="#">Explore online safety tips</a>
+  </div>
+</div>
+{% endblock %}
